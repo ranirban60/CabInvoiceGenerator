@@ -10,9 +10,10 @@ package com.bridgelabz;
       System.out.println(cabInvoiceGenerator.calculateFare(5,15) + " Rs");
   }
 
-  double calculateFare(double distance, double time) {
-   double fare = COST_PER_KM * distance + COST_PER_MIN * time;
-   if(fare > MIN_FARE) return fare;
-   else return MIN_FARE;
+  public double calculateFare(double distance, double time) {
+     double fare = COST_PER_KM * distance + COST_PER_MIN * time;
+     if(fare > MIN_FARE) return fare;
+     else return MIN_FARE;
   }
+
  }
