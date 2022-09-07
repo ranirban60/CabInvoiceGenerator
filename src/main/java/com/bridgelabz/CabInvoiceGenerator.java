@@ -6,7 +6,6 @@ package com.bridgelabz;
    final int  MIN_FARE = 5;
 
   public static void main (String[] args){
-      System.out.println("Welcome to Cab Invoice Generator");
       CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
       System.out.println(cabInvoiceGenerator.calculateFare(5,15) + " Rs");
   }
