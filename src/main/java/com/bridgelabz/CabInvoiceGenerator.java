@@ -11,9 +11,16 @@ package com.bridgelabz;
   }
 
   public double calculateFare(double distance, double time) {
-     double fare = COST_PER_KM * distance + COST_PER_MIN * time;
-     if(fare > MIN_FARE) return fare;
-     else return MIN_FARE;
+   double fare = COST_PER_KM * distance + COST_PER_MIN * time;
+   if(fare > MIN_FARE) return fare;
+   else return MIN_FARE;
   }
 
+     public double calculateFareForMultipleRides(Ride[] ridesArray) {
+      double totalFare = 0;
+         for (Ride ride : ridesArray) {
+          totalFare += calculateFare(ride.distance, ride.time);
+      }
+         return totalFare;
+     }
  }
