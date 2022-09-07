@@ -23,4 +23,12 @@ package com.bridgelabz;
       }
          return totalFare;
      }
+
+     public InvoiceSummary invoiceSummaryCalculation(Ride[] ridesArray) {
+         double totalFare = 0;
+         for (Ride ride : ridesArray) {
+             totalFare += calculateFare(ride.distance, ride.time);
+         }
+         return new InvoiceSummary(ridesArray.length,totalFare);
+     }
  }
