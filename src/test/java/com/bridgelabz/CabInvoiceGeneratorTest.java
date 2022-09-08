@@ -23,7 +23,7 @@ public class CabInvoiceGeneratorTest {
     public void whenGivenMultipleFaresShouldReturnAggregateTotalFare() {
         CabInvoiceGenerator obj = new CabInvoiceGenerator();
         Ride[] ridesArray = { new Ride(3,10), new Ride(5,17), new Ride(7,20)};
-        Assert.assertEquals(197, obj.calculateFareForMultipleRides(ridesArray), 0.000);
+        Assert.assertEquals(197, obj.calculateFareForMultipleRides(ridesArray),0.000);
     }
 
     @Test

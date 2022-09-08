@@ -29,6 +29,6 @@ package com.bridgelabz;
          for (Ride ride : ridesArray) {
              totalFare += calculateFare(ride.distance, ride.time);
          }
-         return new InvoiceSummary(ridesArray.length,totalFare);
+         return new InvoiceSummary(ridesArray.length, totalFare);
      }
  }
