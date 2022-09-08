@@ -4,11 +4,13 @@ public class Ride {
     int distance;
     int time;
     String userId;
+    CabInvoiceGenerator.RideType rideType;
 
-    public Ride(String userId, int distance, int time){
+    public Ride(String userId, int distance, int time, CabInvoiceGenerator.RideType variable){
         this.userId = userId;
         this.distance = distance;
         this.time = time;
+        this.rideType = variable;
     }
 
     public int distance() {
